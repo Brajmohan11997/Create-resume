@@ -12,7 +12,7 @@ Structured Output: Displays the complete resume in a well-formatted manner.
  Code Explanation
 The core of this application lies in the Resume class, which has:
 
-Fields: To store various resume details like fName, lName, professionalCourseName, techSkills, instituteName, etc.
+#000000Fields: To store various resume details like fName, lName, professionalCourseName, techSkills, instituteName, etc.
 Default Constructor: public Resume(): Allows for creating a Resume object without initial parameters, enabling incremental data addition.
 Overloaded addDetails Methods:
 addDetails(String fName, String lName, int age, String contact): For personal information.
@@ -20,9 +20,9 @@ addDetails(String professionalCourseName, String techSkills): For professional s
 addDetails(String instituteName, String educationDegreeName, String collegeName, String schoolName): For educational background. These methods demonstrate compile-time polymorphism, as the Java compiler determines which addDetails method to call based on the number and types of arguments provided.
 displayResume() Method: Gathers all the entered information and prints a formatted resume to the console.
 main Method:
-Creates a Resume object.
+###Creates a Resume object.
 Interactively prompts the user for various resume details using Scanner.
 Calls the appropriate addDetails overloaded methods to populate the Resume object.
 Finally, calls displayResume() to show the generated resume.
-🧠 Polymorphism in Action
+🧠 ###Polymorphism in Action
 This project is a great example of compile-time polymorphism (method overloading). Notice how the addDetails method is defined multiple times within the Resume class, each with a unique signature (different number or type of parameters).
